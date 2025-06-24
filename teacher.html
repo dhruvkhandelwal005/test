@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Teacher Dashboard</title>
+</head>
+<body>
+  <h2>Welcome, <span id="teacherName"></span></h2>
+
+  <div>
+    <input type="text" id="className" placeholder="Enter Class Name" />
+    <button onclick="saveClass()">Save Class</button>
+  </div>
+
+  <h3>Current Class: <span id="savedClassName">-</span></h3>
+  <button id="toggleBtn" onclick="toggleAttendance()">Start Attendance</button>
+
+  <h3>Attendance Records</h3>
+  <div id="records"></div>
+<button onclick="logout()" style="position: absolute; top: 10px; right: 10px;">Logout</button>
+
+  <!-- Firebase SDKs -->
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-firestore-compat.js"></script>
+
+  <script src="firebase.js"></script>
+  <script src="teacher.js"></script>
+</body>
+</html>

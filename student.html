@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Dashboard</title>
+</head>
+<body>
+  <h2>Welcome, <span id="studentName"></span></h2>
+
+  <button id="markBtn" onclick="toggleMarking()">Mark Attendance</button>
+
+  <h3>Your Attendance Records</h3>
+  <div id="myRecords"></div>
+  <button onclick="logout()" style="position: absolute; top: 10px; right: 10px;">Logout</button>
+
+  <!-- Firebase SDKs -->
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-firestore-compat.js"></script>
+
+  <script src="firebase.js"></script>
+  <script src="student.js"></script>
+</body>
+</html>
